@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- *Main Entry of my program
- *Program that print something with puts method
+/**
+ * main - Program entry point
  *
+ * Return:  0 on success. Error code otherwise
  */
 int main(void)
 {
