@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+/**
+ * main - Program entry point
+ *
+ *Return:  0 on success. Error code otherwise
+ */
+int main(void)
+{
+char c;
+char l;
+for (c = 'a'; c <= 'z'; ++c)
+{
+if (c != 'q' && c != 'e')
+{
+putchar(c);
+}
+}
+printf("\n");
+return (0);
+}
