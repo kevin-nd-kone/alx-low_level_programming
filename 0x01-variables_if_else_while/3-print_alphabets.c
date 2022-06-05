@@ -11,12 +11,12 @@ char c;
 char l;
 for (c = 'a'; c <= 'z'; ++c)
 {
-printf("%c", c);
+putchar("%c", c);
 }
 for (l = 'A'; l <= 'Z'; ++l)
 {
-printf("%c", l);
+putchar("%c", l);
 }
-printf("\n");
+putchar("\n");
 return (0);
 }
