@@ -8,11 +8,9 @@
 int main(void)
 {
 int n;
-char t;
 for (n = 0; n < 10; n++)
 {
-t = n;
-putchar(t);
+putchar(n);
 }
 return (0);
 }
