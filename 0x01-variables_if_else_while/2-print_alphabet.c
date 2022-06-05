@@ -10,8 +10,8 @@ int main(void)
 char c;
 for (c = 'a'; c <= 'z'; ++c)
 {
-printf("%c", c);
+putchar("%c", c);
 }
-printf("\n");
+putchar("\n");
 return (0);
 }
