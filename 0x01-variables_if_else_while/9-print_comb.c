@@ -21,6 +21,6 @@ else
 putchar(n % 10 + '0');
 }
 }
-print('\n');
+printf('\n');
 return (0);
 }
