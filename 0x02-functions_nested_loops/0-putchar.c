@@ -1,10 +1,10 @@
-#include <_putchar.h>
-#include <main.h>
+#include "main.h"
+#include "_putchar.h"
 #include <string.h>
 /**
- * main - Program entry point
+ * main - check the code
  *
- *Return:  0 on success. Error code otherwise
+ * Return: Always 0.
  */
 int main(void)
 {
