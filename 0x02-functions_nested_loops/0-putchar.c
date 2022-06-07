@@ -1,5 +1,5 @@
-#include "_putchar.h"
-#include "main.h"
+#include "_putchar"
+#include "main"
 #include <string.h>
 /**
  * main - Program entry point
