@@ -1,5 +1,5 @@
-#include "1-main.h"
-#include "_putchar.h"
+#include "main.c"
+#include "_putchar.c"
 #include <string.h>
 /**
  * main - check the code
