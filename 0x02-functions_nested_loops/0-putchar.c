@@ -1,17 +1,11 @@
-#include "main.h"
-#include <string.h>
+#include <stdio.h>
 /**
- * main - check the code
+ * main - Program entry point
  *
- * Return: Always 0.
+ *Return:  0 on success. Error code otherwise
  */
 int main(void)
 {
-char text[] = "_putchar";
-for (int i = 0; i < strlen(text) ; i++)
-{
-_putchar(text[i]);
-}
-putchar('\n');
+printf("_putchar \n");
 return (0);
 }
