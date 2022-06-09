@@ -14,9 +14,9 @@ printf("Infinite loop incoming :(\n");
 i = 0;
 
 /**
-* Infinite loop - counter not increment
 * while (i < 10)
 * {
+*       infinite loop without counter incrementationx
 *       putchar(i);
 * }
 */
