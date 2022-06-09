@@ -17,4 +17,5 @@ else
 {
 return (0);
 }
+putchar('\n');
 }
