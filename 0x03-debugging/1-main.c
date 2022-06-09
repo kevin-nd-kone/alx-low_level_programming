@@ -15,8 +15,7 @@ i = 0;
 
 /**
 * while (i < 10)
-* {
-*       infinite loop without counter incrementationx
+* { infinite loop without counter incrementation
 *       putchar(i);
 * }
 */
