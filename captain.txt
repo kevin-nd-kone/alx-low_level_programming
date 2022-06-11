@@ -1,0 +1,9 @@
+Q3
+This week's program was very interesting. We saw a lot of new things and learned a lot. We were confronted with new challenges that we had to face and win. For me it was a very rewarding program.
+
+Q4
+I think it's a great experience as we learn new things every week. Things that will be very useful in our career as software engineers.
+
+Q5
+The work environment was a little difficult to understand at first but with time and practice I got used to it and mastered its functioning. And I like it.
+A part que la connexion SSH du sanbox qui souvent se deconnect seul lorsque je suis en train de travailler. Mais je vais trouver une solution pour pallier a cela.
