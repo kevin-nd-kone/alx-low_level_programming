@@ -3,7 +3,7 @@
 
 /**
  * _puts - print string
- *
+ *@str : param string
  * Return: Always 0.
  */
 
