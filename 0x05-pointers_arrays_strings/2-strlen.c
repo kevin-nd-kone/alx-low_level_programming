@@ -4,7 +4,7 @@
 /**
  *_strlen - calculate len of string
  *@n : param string
- *Return int - int the len of string n
+ * Return: Always 0.
  */
 int _strlen(char *n)
 {
