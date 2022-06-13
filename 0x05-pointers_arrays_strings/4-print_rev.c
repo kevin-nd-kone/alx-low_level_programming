@@ -12,7 +12,7 @@ int len = strlen(s);
 int i = len;
 for (int i = len; i <= 0; i--)
 {
-putchar(s[i]);
+putchar(*s[i]);
 }
 }
 }
