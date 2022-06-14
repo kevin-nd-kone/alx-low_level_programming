@@ -13,7 +13,6 @@ int len = strlen(s);
 int i;
 while (i <= len)
 {
-_putchar(s[i]);
 i--;
 }
 _putchar('\n');
