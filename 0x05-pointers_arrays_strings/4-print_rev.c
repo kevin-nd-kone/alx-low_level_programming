@@ -11,7 +11,7 @@ int len = strlen(s);
 int i;
 while (i <= len)
 {
-puts(s[i]);
+_putchar(s[i]);
 i--;
 }
 _putchar('\n');
