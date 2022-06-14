@@ -9,11 +9,5 @@
 
 void rev_string(char *s)
 {
-int len = strlen(s);
-int i;
-while (i <= len)
-{
-i--;
-}
-_putchar('\n');
+
 }

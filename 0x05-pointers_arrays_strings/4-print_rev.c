@@ -6,15 +6,9 @@
  */
 void print_rev(char *s)
 {
-int i, len, temp;
+int i, len;
 len = strlen(s);
-for (i = 0; i < len / 2; i++)
-{
-temp = str1[i];
-str1[i] = str1[len - i - 1];
-str1[len - i - 1] = temp;
-}
-for (i = 0; i < len; i++)
+for (i = len; i >= 0; i--)
 {
 _putchar(s[i]);
 }
