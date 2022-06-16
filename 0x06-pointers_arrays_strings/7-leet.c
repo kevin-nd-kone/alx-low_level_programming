@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 /**
  * leet - Encode to 1337
  * @n: string to be changed
