@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
 *_puts_recursion - print a string
 *
@@ -9,7 +9,7 @@
 
 _puts_recursion(char *s)
 {
-int i = sizeof s / sizeof s[i];
+int i = strlen(s);
 for(i = 0; i < i; i++)
 {
 _putchar(s[i]);
