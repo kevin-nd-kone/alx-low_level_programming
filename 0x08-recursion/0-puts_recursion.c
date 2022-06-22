@@ -9,11 +9,7 @@
 
 void _puts_recursion(char *s)
 {
-int len = strlen(s);
-int i;
-for (i = 0; i < len; i++)
-{
-_putchar(s[i]);
+puts(s);
 }
 _putchar('\n');
 }
