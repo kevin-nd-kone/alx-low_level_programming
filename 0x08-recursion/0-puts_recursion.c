@@ -7,7 +7,7 @@
 *
 */
 
-_puts_recursion(char *s)
+void _puts_recursion(char *s)
 {
 int len = strlen(s);
 for (i = 0; i < len; i++)
