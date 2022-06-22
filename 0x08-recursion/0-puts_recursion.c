@@ -3,14 +3,14 @@
 /**
 *_puts_recursion - print a string
 *
-*@s - char param
+*@s : char param
 *
 */
 
 _puts_recursion(char *s)
 {
-int i = strlen(s);
-for(i = 0; i < i; i++)
+int len = strlen(s);
+for (i = 0; i < len; i++)
 {
 _putchar(s[i]);
 }
