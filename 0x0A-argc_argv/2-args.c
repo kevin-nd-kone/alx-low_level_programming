@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  *main - main entry of program
@@ -7,12 +8,15 @@
  *
  *@argv : array of argument
  *
- *Return - alway 0
+ *Return: alway 0
  */
-
 
 int main(int argc, char *argv[])
 {
-printf("%s\n", argv[0]);
+int i;
+for (i = 0; i < argc; i++)
+{
+printf("%s\n", argv[i]);
+}
 return (0);
 }
