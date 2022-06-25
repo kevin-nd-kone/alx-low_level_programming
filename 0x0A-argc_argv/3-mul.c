@@ -13,13 +13,13 @@
 
 int main(int argc, char *argv[])
 {
-if(!(argc > 2))
+if (!(argc > 2))
 {
 char error[] = "Error";
-printf("%s\n",error);
+printf("%s\n", error);
 return (1);
 }
-int i,res;
+int i, res;
 res = atoi(argv[1]) * atoi(argv[2]);
 printf("%d\n", res);
 return (0);
