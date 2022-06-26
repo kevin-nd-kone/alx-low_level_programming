@@ -7,4 +7,7 @@
  *Return int 
  */
 int _putchar(char c)
-{(void)c;}
+{
+(void)c;
+return (0);
+}
