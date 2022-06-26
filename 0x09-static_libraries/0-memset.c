@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
- *  _memset - function pointer
+ *_memset - function pointer
  *
- * @s : param char  
- * @b : param char
- * @n : param char
- * Return : char*
+ *@s : param char  
+ *@b : param char
+ *@n : param char
+ *Return : char*
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-
+(void)s;
+(void)b;
+(void)n;
 }

@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * _putchar - print char
+ *_putchar - print char
  * 
- * @c : param char 
- * Return int 
+ *@c : param char 
+ *Return int 
  */
 int _putchar(char c)
-{
-
-}
+{(void)c;}

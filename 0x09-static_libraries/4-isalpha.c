@@ -2,12 +2,12 @@
 
 
 /**
- * _isalpha
- * 
- * @c : param int 
- * Return : int 
+ *_isalpha
+ *
+ *@c : param int 
+ *Return : int 
  */
 int _isalpha(int c)
 {
-
+(void)c;
 }
