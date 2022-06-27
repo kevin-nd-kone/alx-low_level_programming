@@ -17,10 +17,16 @@ if (size == 0)
 {
 return (NULL);
 }
+else
+{
 chars = malloc(size * sizeof(c));
 if (chars == NULL)
 {
 return (NULL);
 }
+else
+{
 return (chars);
+}
+}
 }
