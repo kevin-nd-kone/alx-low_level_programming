@@ -14,21 +14,15 @@
 char *_strdup(char *str)
 {
 char *c;
-if (str)
-{
-return (NULL);
-}
-else
-{
-c = strdup(str);
-if (c == NULL)
+
+if (str == NULL)
 {
 printf("failed to allocate memory\n");
 return (NULL);
 }
 else
 {
+c = strdup(str);
 return (c);
-}
 }
 }
