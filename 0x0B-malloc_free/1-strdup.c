@@ -19,7 +19,7 @@ c = strdup(str);
 if (c == NULL)
 {
 printf("failed to allocate memory\n");
-return (1);
+return (NULL);
 }
 return (c);
 }
