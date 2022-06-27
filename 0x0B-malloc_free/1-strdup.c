@@ -14,7 +14,10 @@
 char *_strdup(char *str)
 {
 char *c;
-
+if (str)
+{
+return (NULL);
+}
 c = strdup(str);
 if (c == NULL)
 {
