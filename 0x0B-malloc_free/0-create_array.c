@@ -10,16 +10,17 @@
  *
  *Return: return pointer char or null
  */
-char *create_array(unsigned int size, char *c)
+char *create_array(unsigned int size, char c)
 {
+char *chars;
 if (size == 0)
 {
 return (NULL);
 }
-c = malloc(size * sizeof(c));
-if (c == NULL)
+chars = malloc(size * sizeof(c));
+if (chars == NULL)
 {
 return (NULL);
 }
-return (c);
+return (chars);
 }
