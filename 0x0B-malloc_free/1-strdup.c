@@ -18,7 +18,8 @@ char *c;
 c = strdup(str);
 if (c == NULL)
 {
-return (NULL);
+printf("failed to allocate memory\n");
+return (1);
 }
 return (c);
 }
