@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- *str_concat - funtion that return copy of string
+ *_strdup - funtion that return copy of string
  *
  *@str: param pointer to char
  *
