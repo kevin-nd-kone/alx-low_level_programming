@@ -22,5 +22,5 @@ if (chars == NULL)
 {
 return (NULL);
 }
-return (chars);
+return (*chars);
 }
