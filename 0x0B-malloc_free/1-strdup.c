@@ -21,5 +21,8 @@ if (c == NULL)
 printf("failed to allocate memory\n");
 return (NULL);
 }
+else
+{
 return (c);
+}
 }
