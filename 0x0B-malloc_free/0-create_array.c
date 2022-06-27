@@ -5,10 +5,10 @@
 /**
  *create_array - funtion that return null or pointer
  *
- *@size : param unsigned int
- *@c : param char
+ *@size: param unsigned int
+ *@c: param char
  *
- *Return : char *
+ *Return: return pointer char or null
  */
 char *create_array(unsigned int size, char c)
 {
