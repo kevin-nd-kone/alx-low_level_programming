@@ -10,7 +10,7 @@
  *
  *Return: return pointer char or null
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char *c)
 {
 if (size == 0)
 {
