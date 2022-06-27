@@ -7,7 +7,8 @@
  *
  * @size : param unsigned int
  * @c : param char
- *Return : return null or char pointer
+ * 
+ * Return : char *
  */
 char *create_array(unsigned int size, char c)
 {
