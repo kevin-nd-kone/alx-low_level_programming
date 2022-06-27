@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- * create_array - funtion that return null or pointer
+ *create_array - funtion that return null or pointer
  *
- * @size : param unsigned int
- * @c : param char
- * 
- * Return - char *
+ *@size : param unsigned int
+ *@c : param char
+ *
+ *Return : char *
  */
 char *create_array(unsigned int size, char c)
 {
