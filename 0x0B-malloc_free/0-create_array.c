@@ -5,20 +5,20 @@
 /**
  * create_array - funtion that return null or pointer
  *
- * @size : param unsigned int 
+ * @size : param unsigned int
  * @c : param char
  * Return : return null or char pointer
  */
 char *create_array(unsigned int size, char c)
 {
-if ( size == 0)
+if (size == 0)
 {
-return NULL;
+return (NULL);
 }
 c = malloc(size * sizeof(c));
-if(c == NULL)
+if (c == NULL)
 {
-return NULL;
+return (NULL);
 }
-return c;
+return (c);
 }
