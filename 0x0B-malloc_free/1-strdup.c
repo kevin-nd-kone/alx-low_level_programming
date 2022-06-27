@@ -17,7 +17,6 @@ char *c;
 
 if (str == NULL)
 {
-printf("failed to allocate memory\n");
 return (NULL);
 }
 else
