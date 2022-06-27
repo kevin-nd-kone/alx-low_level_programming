@@ -18,6 +18,8 @@ if (str)
 {
 return (NULL);
 }
+else
+{
 c = strdup(str);
 if (c == NULL)
 {
@@ -27,5 +29,6 @@ return (NULL);
 else
 {
 return (c);
+}
 }
 }
