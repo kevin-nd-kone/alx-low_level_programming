@@ -1,66 +1,36 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 /**
  *str_concat - function that concat two string
- *
  *@s1: param pointer to char
  *@s2: param pointer to char
  *Return: return pointer char or null
  */
-
 char *str_concat(char *s1, char *s2)
 {
-char *mall;
-int l1, l2, i;
-mall = malloc(sizeof(s1) + sizeof(s2));
-if (mall == NULL)
+char *concat,*con;
+int l1, l2, i, j;
+if (s1 == NULL)
 {
-return (NULL);
+s1 = "";
 }
-else
+if (s2 == NULL)
 {
-if (s1 == NULL && s2 == NULL)
-{
-mall[1] = "";
-mall[2] = "";
-return (mall);
+s2 = "";
 }
-else if (s1 != NULL && s2 != NULL)
-{
 l1 = sizeof(s1) / sizeof(char);
-l2 = sizeof(s2) / sizeof(char);
-for (i = 0; i < l1; i++)
+l2 = sizeof(s1) / sizeof(char);
+while (i < l1)
 {
-mall[i] = s1[i];
+concat[i] = s1[i];
+i++;
 }
-for (i = 0; i < l2; i++)
+while (j < l2)
 {
-mall[l1 + i + 1] = s2[i];
+concat[j] = s1[j];
+j++;
 }
-return (mall);
-}
-else if (s1 == NULL && s2 != NULL)
-{
-mall[1] = "";
-l2 = sizeof(s2) / sizeof(char);
-for (i = 0; i < l2; i++)
-{
-mall[1 + i + 1] = s2[i];
-}
-return (mall);
-}
-else
-{
-l1 = sizeof(s1) / sizeof(char);
-for (i = 0; i < l1; i++)
-{
-mall[i] = s1[i];
-}
-mall[l1 + 1] = "";
-return (mall);
-}
-}
+con = strdup(concat);
+return con;
 }
