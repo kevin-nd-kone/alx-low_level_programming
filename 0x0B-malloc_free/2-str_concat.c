@@ -18,7 +18,6 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-concat = strcat(s1, s2);
-c = strdup(concat);
-return (c);
+strcat(s1, s2);
+return (s1);
 }
