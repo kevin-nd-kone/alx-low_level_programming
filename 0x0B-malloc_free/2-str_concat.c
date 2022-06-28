@@ -9,8 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-char *concat, *con;
-int l1, l2, i, j;
+char *concat;
 if (s1 == NULL)
 {
 s1 = "";
@@ -19,18 +18,6 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-l1 = sizeof s1 / sizeof s1[0];
-l2 = sizeof s2  / sizeof s2[0];
-while (i < l1)
-{
-concat[i] = s1[i];
-i++;
-}
-while (j < l2)
-{
-concat[j] = s1[j];
-j++;
-}
-con = strdup(concat);
-return (con);
+concat = strcat(s1, s2);
+return (concat);
 }
