@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-char *concat,*con;
+char *concat, *con;
 int l1, l2, i, j;
 if (s1 == NULL)
 {
@@ -32,5 +32,5 @@ concat[j] = s1[j];
 j++;
 }
 con = strdup(concat);
-return con;
+return (con);
 }
