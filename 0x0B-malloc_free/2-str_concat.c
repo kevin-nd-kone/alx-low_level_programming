@@ -19,8 +19,8 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-l1 = sizeof(s1) / sizeof(char);
-l2 = sizeof(s1) / sizeof(char);
+l1 = sizeof s1 / sizeof s1[0];
+l2 = sizeof s2  / sizeof s2[0];
 while (i < l1)
 {
 concat[i] = s1[i];
