@@ -40,7 +40,7 @@ for (i = 0; i < l2; i++)
 {
 mall[l1 + i + 1] = s2[i];
 }
-return mall;
+return (mall);
 }
 else if (s1 == NULL && s2 != NULL)
 {
@@ -50,7 +50,7 @@ for (i = 0; i < l2; i++)
 {
 mall[1 + i + 1] = s2[i];
 }
-return mall;
+return (mall);
 }
 else
 {
@@ -60,7 +60,7 @@ for (i = 0; i < l1; i++)
 mall[i] = s1[i];
 }
 mall[l1 + 1] = "";
-return mall;
+return (mall);
 }
 }
 }
