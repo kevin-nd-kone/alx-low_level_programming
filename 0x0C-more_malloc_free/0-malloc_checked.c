@@ -15,5 +15,5 @@ if (memo == NULL)
 {
 exit(98);
 }
-return (98);
+return (memo);
 }
