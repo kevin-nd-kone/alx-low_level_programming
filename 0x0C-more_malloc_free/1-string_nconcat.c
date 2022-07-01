@@ -1,24 +1,6 @@
 #include "main.h"
-<<<<<<< HEAD
-
-/**
- * _len - determinate length of a string
- * @s: string
- * Return: int
- */
-
-unsigned int _len(char *s)
-{
-unsigned int size = 0;
-while (*(s + c) != '\0')
-{
-c++;
-}
-return (c);
-}
-=======
 #include <stdlib.h>
->>>>>>> 8a3fa7eca7c1ec70b4049d0561ce563b5a5b3eab
+
 
 /**
  * string_nconcat - concatenates two strings
@@ -38,13 +20,8 @@ if (s1 == NULL)
 if (s2 == NULL)
 	s2 = "";
 
-<<<<<<< HEAD
 if (n < _len(s2))
 	m = malloc(_strlen(s1) + n * sizeof(char) + 1);
-=======
-if (n < _strlen(s2))
-	m = malloc(_len(s1) + n * sizeof(char) + 1);
->>>>>>> 8a3fa7eca7c1ec70b4049d0561ce563b5a5b3eab
 else
 	m = malloc(_len(s1) + _len(s2) + 1);
 
@@ -71,7 +48,7 @@ return (m);
 unsigned int _len(char *s)
 {
 unsigned int c = 0;
-while(*(s + 1) != '\0')
+while (*(s + 1) != '\0')
 {
 c++;
 }
