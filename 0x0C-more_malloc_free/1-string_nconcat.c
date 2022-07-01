@@ -25,15 +25,15 @@ l1 = len(s1);
 l2 = len(s2);
 strg = malloc(sizeof(char) * (l1 * n) + 1);
 if (strg == NULL)
-return NULL;
-// insertion of s1
+return (NULL);
+/*insertion of s1*/
 while (s1[i] != '\0')
 {
 strg[j] = s1[i];
 i++;
 j++;
 }
-// insertion of s2
+/*insertion of s2*/
 if (l1 >= l2)
 i = 0 ;
 while (s2[i] != '\0')
