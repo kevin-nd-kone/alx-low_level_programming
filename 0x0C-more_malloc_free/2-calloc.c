@@ -35,10 +35,10 @@ return (m);
 
 char *_memoryset(char *cons, char c, unsigned int n)
 {
-    char *ptr = cons;
+char *ptr = cons;
 
-    while (n--)
-        *cons++ = c;
+while (n--)
+*cons++ = c;
 
-    return (ptr);
+return (ptr);
 }
