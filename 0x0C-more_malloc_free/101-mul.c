@@ -22,7 +22,7 @@ i++;
  * Return: integer converted
  */
 
-int _atoi(const char *s)
+int _isnum(const char *s)
 {
 int sign = 1;
 unsigned long int resp = 0, num, i;
@@ -50,7 +50,7 @@ return (sign *resp);
  * Return: 0
  */
 
-void print_int(unsigned long int n)
+void _print(unsigned long int n)
 {
 
 unsigned long int divisor = 1, i, resp;
@@ -81,7 +81,7 @@ if (argc != 3)
 _puts("Error ");
 exit(98);
 }
-print_int(_atoi(argv[1]) * _atoi(argv[2]));
+_print(_isnum(argv[1]) * _isnum(argv[2]));
 _putchar('\n');
 
 return (0);
