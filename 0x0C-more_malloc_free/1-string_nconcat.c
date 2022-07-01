@@ -23,8 +23,8 @@ s2 = "";
 }
 l1 = len(s1);
 l2 = len(s2);
-strg = malloc(sizeof(char) * (l1 * l2) + 1);
-if(strg == NULL)
+strg = malloc(sizeof(char) * (l1 * n) + 1);
+if (strg == NULL)
 return NULL;
 // insertion of s1
 while (s1[i] != '\0')
@@ -34,7 +34,7 @@ i++;
 j++;
 }
 // insertion of s2
-if(l1 >= l2)
+if (l1 >= l2)
 i = 0 ;
 while (s2[i] != '\0')
 {
