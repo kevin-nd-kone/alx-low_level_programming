@@ -1,23 +1,25 @@
 #include "main.h"
 
 /**
- * _strlen - find length of a string
+ * _len - determinate length of a string
  * @s: string
  * Return: int
  */
 
-unsigned int _strlen(char *s)
+unsigned int _len(char *s)
 {
 unsigned int size = 0;
-for (; s[size] != '\0'; size++)
-;
-return (size);
+while (*(s + c) != '\0')
+{
+c++;
+}
+return (c);
 }
 
 /**
- * *string_nconcat - concatenates two strings
- * @s1: string 1
- * @s2: string 2
+ * string_nconcat - concatenates two strings
+ * @s1: param string 1
+ * @s2: param string 2
  * @n: first bytes of s2 to be used
  * Return: pointer or NULL
  */
@@ -32,7 +34,7 @@ if (s1 == NULL)
 if (s2 == NULL)
 	s2 = "";
 
-if (n < _strlen(s2))
+if (n < _len(s2))
 	m = malloc(_strlen(s1) + n * sizeof(char) + 1);
 else
 	m = malloc(_strlen(s1) + _strlen(s2) + 1);
