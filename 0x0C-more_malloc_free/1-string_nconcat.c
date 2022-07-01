@@ -23,7 +23,7 @@ s2 = "";
 }
 l1 = len(s1);
 l2 = len(s2);
-strg = malloc((l1 * l2) * sizeof(char) + 1);
+strg = malloc(sizeof(char) * (l1 * l2) + 1);
 if(strg == NULL)
 return NULL;
 // insertion of s1
@@ -55,17 +55,17 @@ return (strg);
 
 /**
  * len - determinate the lengh of string
- * 
- * @s: param char 
- * Return: return lenght of string 
+ *
+ * @s: param char
+ * Return: return lenght of string
  */
 
 int len(char *s)
 {
-    int lenght;
-    while (*(s + 1) != '\0')
-    {
-        lenght++;
-    }
-    return (lenght);
+int lenght;
+while (*(s + 1) != '\0')
+{
+lenght++;
+}
+return (lenght);
 }
