@@ -23,7 +23,7 @@ s2 = "";
 }
 l1 = len(s1);
 l2 = len(s2);
-strg = malloc(sizeof(char) * (l1*n) + 1);
+strg = malloc(sizeof(char) * (l1 *n) + 1);
 if (strg == NULL)
 return (NULL);
 /*insertion of s1*/
