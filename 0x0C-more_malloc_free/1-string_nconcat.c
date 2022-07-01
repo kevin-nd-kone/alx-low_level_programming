@@ -1,18 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-/**
- * _strlen - find length of a string
- * @s: string
- * Return: int
- */
-
-unsigned int _strlen(char *s)
-{
-unsigned int size = 0;
-for (; s[size] != '\0'; size++)
-;
-return (size);
-}
 
 /**
  * *string_nconcat - concatenates two strings
@@ -33,9 +20,9 @@ if (s2 == NULL)
 	s2 = "";
 
 if (n < _strlen(s2))
-	m = malloc(_strlen(s1) + n * sizeof(char) + 1);
+	m = malloc(_len(s1) + n * sizeof(char) + 1);
 else
-	m = malloc(_strlen(s1) + _strlen(s2) + 1);
+	m = malloc(_len(s1) + _len(s2) + 1);
 
 if (m == 0)
 	return (NULL);
@@ -49,4 +36,20 @@ for (j = 0; s2[j] != '\0' && j < n; i++, j++)
 m[i] = '\0';
 
 return (m);
+}
+
+/**
+ * _strlen - find length of a string
+ * @s: string
+ * Return: int
+ */
+
+unsigned int _len(char *s)
+{
+unsigned int c = 0;
+while(*(s + 1) != '\0')
+{
+c++;
+}
+return (c);
 }
