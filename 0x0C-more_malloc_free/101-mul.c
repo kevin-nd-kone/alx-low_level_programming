@@ -17,7 +17,7 @@ i++;
 }
 
 /**
- * _atoi - convert a string to an integer.
+ * _isnum - convert a string to an integer.
  * @s: char type string
  * Return: integer converted
  */
@@ -45,7 +45,7 @@ return (sign *resp);
 }
 
 /**
- * print_int - prints an integer.
+ * _print - print an integer.
  * @n: int
  * Return: 0
  */
