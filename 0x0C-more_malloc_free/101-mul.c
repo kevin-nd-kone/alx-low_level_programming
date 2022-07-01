@@ -11,7 +11,7 @@ void _puts(char *str)
 int i = 0;
 while (str[i])
 {
- _putchar(str[i]);
+_putchar(str[i]);
 i++;
 }
 }
@@ -41,7 +41,7 @@ resp *= 10;
 resp += (s[i] - 48);
 }
 
-return (sign * resp);
+return (sign *resp);
 }
 
 /**
