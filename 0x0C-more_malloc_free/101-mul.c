@@ -18,42 +18,41 @@ i++;
 }
 
 /**
- * _isnum - convert a string to an integer.
+ * _atoi - convert a string to an integer.
  * @s: char type string
  * Return: integer converted
  */
 
-int _isnum(const char *s)
+int _atoi(const char *s)
 {
 int sign = 1;
-unsigned long int resp = 0, num, i;
+unsigned long int resp = 0, firstNum, i;
 
-for (num = 0; !(s[num] >= 48 && s[num] <= 57); num++)
+for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 {
-if (s[num] == '-')
+if (s[firstNum] == '-')
 {
 sign *= -1;
 }
 }
 
-for (i = num; s[i] >= 48 && s[i] <= 57; i++)
+for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 {
 resp *= 10;
 resp += (s[i] - 48);
 }
 
-return (sign *resp);
+return (sign * resp);
 }
 
 /**
- * _print - print an integer.
+ * print_int - prints an integer.
  * @n: int
  * Return: 0
  */
 
-void _print(unsigned long int n)
+void print_int(unsigned long int n)
 {
-
 unsigned long int divisor = 1, i, resp;
 
 for (i = 0; n / divisor > 9; i++, divisor *= 10)
@@ -82,7 +81,7 @@ if (argc != 3)
 _puts("Error ");
 exit(98);
 }
-_print(_isnum(argv[1]) * _isnum(argv[2]));
+print_int(_atoi(argv[1]) * _atoi(argv[2]));
 _putchar('\n');
 
 return (0);
