@@ -11,61 +11,58 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *strg;
-unsigned int i = 0, j = 0, l1, l2;
-if (s1 == NULL)
-{
-s1 = "";
-}
-if (s2 == NULL)
-{
-s2 = "";
-}
-l1 = len(s1);
-l2 = len(s2);
-strg = malloc(sizeof(char) * (l1 *n) + 1);
-if (strg == NULL)
-return (NULL);
-/*insertion of s1*/
-while (s1[i] != '\0')
-{
-strg[j] = s1[i];
-i++;
-j++;
-}
-/*insertion of s2*/
-if (l1 >= l2)
-i = 0;
-while (s2[i] != '\0')
-{
-strg[j] = s2[i];
-i++;
-j++;
-}
-i = 0;
-while ((i + 1) <= n && n <= l2)
-{
-strg[j] = s2[i];
-i++;
-j++;
-}
-strg[j] = '\0';
-return (strg);
-}
+    char *new_str;
+    unsigned int i = 0, j = 0, m, p;
 
+    if (s1 == NULL)
+        s1 = "";
+    if (s2 == NULL)
+        s2 = "";
+    m = string_length(s1);
+    p = string_length(s2);
+    new_str = malloc(sizeof(char) * (m * n) + 1);
+    if (new_str == NULL)
+        return (NULL);
+    /* insert s1 into new_str */
+    while (s1[i] != '\0')
+    {
+        new_str[j] = s1[i];
+        i++;
+        j++;
+    }
+    /* insert s2 into new_str */
+    if (n >= p)
+    {
+        i = 0;
+        while (s2[i] != '\0')
+        {
+            new_str[j] = s2[i];
+            i++;
+            j++;
+        }
+    }
+    i = 0;
+    while ((i + 1) <= n && n <= p)
+    {
+        new_str[j] = s2[i];
+        i++;
+        j++;
+    }
+    new_str[j] = '\0';
+    return (new_str);
+}
 /**
- * len - determinate the lengh of string
- *
- * @s: param char
- * Return: return lenght of string
+ * string_length - finds the length of a string.
+ * Return: length of c.
+ * @pointer: pointer.
  */
+int string_length(char *pointer)
+{
+    int c = 0;
 
-int len(char *s)
-{
-int lenght;
-while (*(s + 1) != '\0')
-{
-lenght++;
-}
-return (lenght);
+    while (*(pointer + c) != '\0')
+    {
+        c++;
+    }
+    return (c);
 }
