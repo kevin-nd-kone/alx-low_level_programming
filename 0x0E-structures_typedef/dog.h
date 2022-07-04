@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
  * struct dog - define a struct dog
- * 
  * @name: first member
  * @age: second member
  * @owner: third member
