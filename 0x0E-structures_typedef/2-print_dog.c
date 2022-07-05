@@ -2,15 +2,15 @@
 #include "dog.h"
 
 /**
- * print_dog - void that print dog struct 
- * 
+ * print_dog - void that print dog struct
+ *
  * @d: struct dog pointer
- * 
- * Return: Nothing 
+ *
+ * Return: Nothing
  */
 void print_dog(struct dog *d)
 {
-if(d)
+if (d)
 {
 printf("Name: %s\n", d->name ? d->name : "(nil)");
 printf("Age: %f\n", d->age);
