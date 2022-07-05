@@ -3,10 +3,10 @@
 
 /**
  * free_dog - free struct doc
- * 
+ *
  * @d: struc dog pointer
- * 
- * Return: Nothing 
+ *
+ * Return: Nothing
  */
 
 void free_dog(dog_t *d)
