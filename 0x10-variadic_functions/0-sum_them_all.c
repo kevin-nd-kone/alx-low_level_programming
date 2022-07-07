@@ -19,5 +19,5 @@ for (int i = 0; i < count; ++i)
 res += va_arg(args, int);
 }
 va_end(args);
-return res;
+return (res);
 }
