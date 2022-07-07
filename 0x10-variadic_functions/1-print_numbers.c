@@ -6,9 +6,9 @@
 
 /**
  * print_numbers - function that print number following by char
- * 
- * @separator: param pointer to char 
- * @n: param int n number of passed param 
+ *
+ * @separator: param pointer to char
+ * @n: param int n number of passed param
  *
  * Return: O if n is null otherwise nothing
  */
