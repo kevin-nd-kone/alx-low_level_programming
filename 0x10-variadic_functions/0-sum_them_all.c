@@ -20,5 +20,6 @@ for (i = 0; i < n; i++)
 {
 res += va_arg(arg, unsigned int);
 }
+va_end(arg);
 return (res);
 }
