@@ -29,6 +29,6 @@ printf("%d",value);
 if (i < (n-1) && n != NULL)
 printf("%s",separator);
 }
-print("\n");
+printf("\n");
 va_end(arg);
 }
