@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdarg>
-#include <stdio.h>
+#include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * sum_them_all - function that calculate the sum of all given params
  *
@@ -18,5 +19,5 @@ for (int i = 0; i < count; ++i)
 res += va_arg(args, int);
 }
 va_end(args);
-return (res);
+return res;
 }
