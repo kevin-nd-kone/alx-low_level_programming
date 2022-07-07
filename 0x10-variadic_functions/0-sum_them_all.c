@@ -1,5 +1,3 @@
-#include <iostream>
-#include <cstdarg>
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
@@ -11,13 +9,17 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-int res = 0;
-std::va_lits args;
-va_start(args, count);
-for (int i = 0; i < count; ++i)
+unsigned int sum = 0;
+unsigned int i;
+va_list arguments;
+
+va_start(arguments, n);
+
+if (n == 0)
+return (0);
+for (i = 0; i < n; i++)
 {
-res += va_arg(args, int);
+sum += va_arg(arguments, unsigned int);
 }
-va_end(args);
-return (res);
+return (sum);
 }
