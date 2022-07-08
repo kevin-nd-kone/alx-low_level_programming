@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_pointer.h"
+#include "function_pointers.h"
 
 /**
  * array_iterator - Executes a function as a parameter
@@ -14,9 +14,13 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-size_t i;
-if (!action || !array)
-return;
-for (i = 0; i < size; i++)
-action(array[i]);
+int a = size;
+int i;
+
+if (array && (size > 0) && action)
+for (i = 0; i < a; i++)
+{
+(action)(array[i]);
 }
+}
+
