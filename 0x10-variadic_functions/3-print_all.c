@@ -13,13 +13,13 @@
 void print_all(const char *const format, ...)
 {
 va_list args;
-unsigned int i, l = sizeof format / sizeof format[0];
+unsigned int i = 0;
 char *c;
 
-var_start(args, format);
-for (i = 0; i < l; i++)
+va_start(args, format);
+while (format && format[i])
 {
-switch (format[i])
+switch (format[i++])
 {
 case 'c':
 printf("%c", va_arg(args, int));
@@ -37,5 +37,8 @@ break;
 default:
 continue;
 }
+if (format[i])
+printf(", ");
 }
+printf("\n");
 }
