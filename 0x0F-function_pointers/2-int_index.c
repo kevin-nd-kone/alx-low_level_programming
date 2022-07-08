@@ -3,7 +3,7 @@
 
 /**
  * int_index - search for an integer
- * 
+ *
  * @array: array of integer
  * @size: size of array
  * @cmp: function pointer
