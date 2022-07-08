@@ -20,7 +20,7 @@ if (atoi(argv[1]) < 0)
 printf("Error\n");
 exit(2);
 }
-for(; i < atoi(argv[1]); i++)
+for (; i < atoi(argv[1]); i++)
 {
 printf("%02hhx", *((char *)main + i));
 if (i < atoi(argv[1]) - 1)
