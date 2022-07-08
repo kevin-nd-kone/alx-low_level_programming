@@ -5,7 +5,7 @@
 
 /**
  * print_all - function that print all thing passed in param
- * 
+ *
  * @format: passed param type
  * Return: Nothing
  */
