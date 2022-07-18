@@ -2,7 +2,6 @@
 #include "lists.h"
 /**
  * *add_nodeint_end - function that adds a new node at the end of a linked list.
- *
  * @head: pointer to a pointer to head.
  * @n: new elements data.
  * Return: address of new element, NULL if it failed.
