@@ -20,7 +20,7 @@ temp = *head;
 if (index == 0)
 {
 *head = temp->next;
-free(temp);         
+free(temp);
 return (1);
 }
 for (i = 0; temp != NULL && i < index - 1; i++)
