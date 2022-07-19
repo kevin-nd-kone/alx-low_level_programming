@@ -14,21 +14,21 @@ unsigned int i;
 listint_t *temp, *next;
 
 if (*head == NULL)
-    return (-1);
+return (-1);
 
 temp = *head;
 if (index == 0)
 {
-    *head = temp->next;
-    free(temp);         
-    return (1);
+*head = temp->next;
+free(temp);         
+return (1);
 }
 for (i = 0; temp != NULL && i < index - 1; i++)
 {
-    temp = temp->next;
+temp = temp->next;
 }
 if (temp == NULL || temp->next == NULL)
-    return (-1);
+return (-1);
 next = temp->next->next;
 
 free(temp->next);
