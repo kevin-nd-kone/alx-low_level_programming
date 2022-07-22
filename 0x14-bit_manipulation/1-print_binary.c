@@ -5,7 +5,6 @@
  * print_binary - function that prints the binary representation of a number.
  *
  * @n: unsigned long int param
- * 
  * Return: alway nothing
  */
 
