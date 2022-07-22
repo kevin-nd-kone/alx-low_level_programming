@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -14,9 +13,13 @@ const int num = 64;
 const int init = 0;
 if (index > num)
 return (-1);
-if (n == 0)
-return (0);
+if (n == init)
+{
+return (init);
+}
 n = n >> index;
-if ((n & 1) != 0)
-return (0);
+if ((n & 1) != init)
+{
+return (init);
+}
 }
