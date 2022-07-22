@@ -7,6 +7,7 @@
  * @b : constant param char
  * Return : number that are converted otherwise 0
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 unsigned int value = 0, count = 0;
