@@ -9,17 +9,17 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-const int num = 64;
-const int init = 0;
-if (index > num)
+if (index > 64)
 return (-1);
-if (n == init)
+if (n == 0)
 {
-return (init);
+return (0);
 }
 n = n >> index;
-if ((n & 1) != init)
+if ((n & 1) != 0)
 {
-return (init);
+return (1);
 }
+return (0);
 }
+
