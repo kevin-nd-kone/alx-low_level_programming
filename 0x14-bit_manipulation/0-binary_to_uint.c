@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * binary_to_uint - function that return unsigned int
+ * binary_to_uint - function that return unsigned int.
  *
  * @b : constant param char
  * Return : number that are converted otherwise 0
