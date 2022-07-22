@@ -3,7 +3,7 @@
 /**
  * set_bit - function that sets the value of a bit to 1 at a given index.
  *
- * @n: 
+ * @n: unsigned long int param
  * @param index
  * Return: int
  */
