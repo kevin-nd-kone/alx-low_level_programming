@@ -6,7 +6,7 @@ I think it's a great experience as we learn new things every week. Things that w
 
 Q5
 The work environment was a little difficult to understand at first but with time and practice I got used to it and mastered its functioning. And I like it.
-A part que la connexion SSH du sanbox qui souvent se deconnect seul lorsque je suis en train de travailler. Mais je vais trouver une solution pour pallier a cela.
+Except that the SSH connection of the sanbox often disconnects itself when I'm working. But I'll find a solution for that.
 
 github link
 https://github.com/kiminzajnr
